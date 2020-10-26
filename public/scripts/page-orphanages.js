@@ -20,7 +20,7 @@ const popup = L.popup({
   minHeight: 240
 }).setContent(`
   Default Orphanages 
-  <a href="orphanage,html?id=1" class="choose-orphanage">
+  <a href="orphanage.html?id=1" class="choose-orphanage">
     <img src="./public/images/arrow-white.svg">
   </a>
 `);

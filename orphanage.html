@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Defalt Orphanages | Happy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="icon" href="./public/images/logo-icon.png" />
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanage.css" />
+  </head>
+
+  <body>
+    <div id="page-orphanage">
+      <aside class="animate-right sidebar">
+
+        <img src="./public/images/map-marker.svg" alt="Happy">
+
+        <footer>
+          <button onclick="history.back()">
+
+            <img src="./public/images/arrow-back.svg" alt="Back">
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-appear width-sidebar">
+        <div class="orphanage-details">
+          <img src="./public/images/home.jpg" alt="Defalt Orphanages" />
+
+          <div class="images">
+            <button onclick="selectImage(event)" type="button" class="active">
+              <img src="https://source.unsplash.com/random?id=1" alt="Defalt Orphanages" />
+            </button>
+
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=2" alt="Defalt Orphanages" />
+            </button>
+
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=3" alt="Defalt Orphanages" />
+            </button>
+
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=4" alt="Defalt Orphanages" />
+            </button>
+
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=5" alt="Defalt Orphanages" />
+            </button>
+
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=6" alt="Defalt Orphanages" />
+            </button>
+          </div>
+
+          <div class="orphanage-details-content">
+            <h1>Defalt Orphanages</h1>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quis,
+              nulla aspernatur id cum dolore odit alias odio illo voluptatem
+              aperiam nisi unde, sunt veritatis nobis obcaecati incidunt ipsa
+              vero.
+            </p>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+              <footer>
+                <a href="#">See directions on Google Maps</a>
+              </footer>
+            </div>
+
+            <hr />
+
+            <h2>Visit instructions</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+            <div class="open-details">
+              <div class="hour">
+                <img src="./public/images/clock.svg" alt="Hours" />
+                Visiting hours from 18h to 8h
+              </div>
+              <div class="open-on-weekends">
+                <img src="./public/images/info.svg" alt="Information" />
+                Open on weekends.
+              </div>
+            </div>
+
+            <button class="primary-button" type="button">
+              <img
+                src="./public/images/whatsapp.svg"
+                alt="Contact us on whatsapp"
+              />
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./public/scripts/page-orphanage.js"></script>
+  </body>
+</html>
