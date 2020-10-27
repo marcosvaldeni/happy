@@ -25,25 +25,23 @@
     <link rel="stylesheet" href="./public/css/sidebar.css" />
     <link rel="stylesheet" href="./public/css/map.css" />
     <link rel="stylesheet" href="./public/css/form.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
     <link rel="stylesheet" href="./public/css/page-create-orphanage.css" />
   </head>
 
   <body>
     <div id="create-orphanage">
       <aside class="animate-right sidebar">
-
-        <img src="./public/images/map-marker.svg" alt="Happy">
+        <img src="./public/images/map-marker.svg" alt="Happy" />
 
         <footer>
           <button onclick="history.back()">
-
-            <img src="./public/images/arrow-back.svg" alt="Back">
+            <img src="./public/images/arrow-back.svg" alt="Back" />
           </button>
         </footer>
       </aside>
 
       <main class="animate-appear width-sidebar">
-
         <form action="">
           <fieldset>
             <legend>Info</legend>
@@ -59,26 +57,70 @@
 
             <div class="input-block">
               <label for="name">Name</label>
-              <input id="name" name="name">
+              <input id="name" name="name" required/>
             </div>
 
             <div class="input-block">
-              <label for="about">About <span>Maximum 300 characters</span> </label>
-              <textarea name="about" id="about"></textarea>
+              <label for="about"
+                >About <span>Maximum 300 characters</span>
+              </label>
+              <textarea name="about" id="about" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="whats">Whatapp</label>
-              <input id="whats" name="whats">
+              <input id="whats" name="whats" required/>
+            </div>
+
+            <div class="input-block images">
+              <label for="images">Foto</label>
+
+              <div class="images-upload" id="images">
+
+                <div class="new-upload">
+                  <input name="images" placeholder="Past the foto's link here" required/>
+                  <span>X</span>
+                </div>
+
+              </div>
+              <button type="button">+</button>
             </div>
           </fieldset>
 
           <fieldset>
             <legend>Visiting</legend>
+
+            <div class="input-block">
+              <label for="instructions">Instructions </label>
+              <textarea name="instructions" id="instructions" required></textarea>
+            </div>
+
+            <div class="input-block">
+              <label for="open_hours">Visiting time table</label>
+              <input id="open_hours" name="open_hours" required />
+            </div>
+  
+            <div class="input-block">
+              <label for="open_weekends">Open on Weekends?</label>
+              <input
+                type="hidden"
+                id="open_weekends"
+                name="open_weekends"
+                value="1"
+                required
+              />
+
+              <div class="button-select">
+                <button type="button" class="active">Sim</button>
+                <button type="button">Nao</button>
+              </div>
+
+              <button class="primary-button" type="submit">Submit</button>
+            </div>
+
+
           </fieldset>
-
         </form>
-
       </main>
     </div>
     <script src="./public/scripts/page-create-orphanage.js"></script>
