@@ -75,7 +75,7 @@ main {
 .orphanage-details-content p {
   line-height: 1.5;
   color: #5C8599;
-  margin-top: 2.4rem;
+  margin: 2.4rem 0;
 }
 
 .orphanage-details-content hr {
